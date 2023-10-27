@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .navbar {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        .navbar li {
+            margin: 0 20px;
+        }
+
+        .join-button {
+            position: relative;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            text-align: left;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+        .text-container {
+            flex: 1;
+            text-align: left;
+        }
+        .Layout3 {
+        width: 1440px;
+        height: 671px;
+        position: relative;
+        background: white;
+    }
+    
+    .Container {
+        height: 612px;
+        padding-top: 160px;
+        padding-bottom: 160px;
+        left: 195px;
+        top: 14px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: inline-flex;
+    }
+    
+    .Row {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        display: inline-flex;
+    }
+    
+    .ColMd5 {
+        width: 507px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 35px;
+        display: inline-flex;
+    }
+    
+    .FixedWidthFixedHeightSec {
+        width: 94px;
+        height: 7px;
+        background: #E74040;
+    }
+    
+    .H2SectionTitle4Sec {
+        color: #252B42;
+        font-size: 40px;
+        font-family: Montserrat;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0.20px;
+        word-wrap: break-word;
+    }
+    
+    .ParagraphSec {
+        color: #737373;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.20px;
+        word-wrap: break-word;
+    }
+    
+    .ASec {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        display: inline-flex;
+    }
+    
+    .H6 {
+        color: #96BB7C;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.20px;
+        word-wrap: break-word;
+    }
+    
+    .IconArrowNext {
+        width: 9px;
+        height: 16px;
+        position: relative;
+    }
+    
+    .None {
+        width: 8.62px;
+        height: 16px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        background: #96BB7C;
+    }
+    
+    .ColMd6 {
+        height: 292px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        display: flex;
+    }
+    
+    .ColMd3 {
+        flex: 1 1 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        display: inline-flex;
+    }
+    
+    .Card {
+        height: 292px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background: white;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        display: flex;
+    }
+    
+    .FixedWidthSec {
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        background: #96BB7C;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        display: flex;
+    }
+    
+    .IconCoolIconN2 {
+        width: 32px;
+        height: 32px;
+        position: relative;
+    }
+    
+    .Blackboards {
+        width: 32px;
+        height: 32px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+    }
+    
+    .Vector {
+        width: 28.57px;
+        height: 18.29px;
+        left: 1.71px;
+        top: 2.29px;
+        position: absolute;
+        background: white;
+    }
+    
+    .H5FeatureTitleSec {
+        width: 157px;
+        color: #252B42;
+        font-size: 16px;
+        font-family: Montserrat;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.10px;
+        word-wrap: break-word;
+    }
+    
+    .FixedWidthFixedHeightSec {
+        width: 50px;
+        height: 2px;
+        background: #E74040;
+    }
+    
+    .ParagraphFeatureDescriptionSec {
+        color: #737373;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.20px;
+        word-wrap: break-word;
+    }
+    
+    .IconCoolIconN5 {
+        width: 32px;
+        height: 32px;
+        position: relative;
+    }
+    
+    .Telescope1 {
+        width: 32px;
+        height: 32px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="navbar">
+        <h2>Brandname</h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="joinus.html" class="join-button" style="background-color: green">JOIN US</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="text-container">
+            <h5>Welcome</h5>
+            <h1>Best Learning Opportunities</h1>
+            <p>Our goal is to make online education work for everyone.</p>
+          <a href="joinus.html" class="join-button"  style="background-color: green">JOIN US</a>
+            <button id="learnMore">Learn More</button>
+        </div>
+        <div class="image-container">
+            <img src="image/BestLearningOpportunities.jpg" width="100%">
+        </div>
+    </div>
+</section>
+    <section>
+    <div class="Layout3">
+        <div class="Container">
+            <div class="Row">
+                <div class="ColMd5">
+                    <div class="FixedWidthFixedHeightSec"></div>
+                    <div class="H2SectionTitle4Sec">Approdable Packages</div>
+                    <div class="ParagraphSec">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</div>
+                    <div class="ASec">
+                        <div class="H6" href="index.html">Learn More</div>
+                        <div class="IconArrowNext">
+                            <div class="None"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ColMd6">
+                    <div class="ColMd3">
+                        <div class="Card">
+                            <div class="FixedWidthSec">
+                                <div class="IconCoolIconN2">
+                                    <div class="Blackboards">
+                                        <div class="Vector"></div>
+                                        <div class="Vector"></div>
+                                        <div class="Vector"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="H5FeatureTitleSec">Certified Teacher</div>
+                            <div class="FixedWidthFixedHeightSec"></div>
+                            <div class="ParagraphFeatureDescriptionSec">The gradual accumulation of information about</div>
+                        </div>
+                    </div>
+                    <div class="ColMd3">
+                        <div class="Card">
+                            <div class="FixedWidthSec">
+                                <div class="IconCoolIconN5">
+                                    <div class="Telescope1">
+                                        <div class="Vector"></div>
+                                        <div class="Vector"></div>
+                                        <div class="Vector"></div>
+                                        <div class="Vector"></div>
+                                        <div class="Vector"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="H5FeatureTitleSec">Expert instruction</div>
+                            <div class="FixedWidthFixedHeightSec"></div>
+                            <div class="ParagraphFeatureDescriptionSec">The gradual accumulation of information about</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+</html>
